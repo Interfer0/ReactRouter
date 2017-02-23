@@ -7,9 +7,9 @@ import Goals from './routes/Goals';
 import './index.css';
 import {Router, Route, browserHistory} from 'react-router';
 
-ReactDOM.render((
-  <Top />
-), document.getElementById('topbar'));
+//ReactDOM.render((
+//  <Top />
+//), document.getElementById('topbar'));
 
 ReactDOM.render((
   <Router history={browserHistory}>

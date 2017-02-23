@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/myStyle.css';
-
+import Top from '../Top';
 
 class myClasses extends Component {
         constructor(props){
@@ -28,6 +28,7 @@ class myClasses extends Component {
     render() {
         return (
             <div className="myClasses">
+                <Top />
                 <h2> Classes I have Taken:</h2> 
                 <div className="ClassesView">
                   {
@@ -35,10 +36,10 @@ class myClasses extends Component {
                       this.state.posts.map(e=>{
                           var item = JSON.parse(e);
                           
-                          console.log(item);
+                          //console.log(item);
 
 
-                          return <div className="Item">
+                          return <div key={item.classid} className="Item">
                                     <input type="hidden" value={item.classid} />
                                     <b>Class Name:</b> {item.classname }<br />
                                     <b>Class Description:</b> {item.classdescription }<br />

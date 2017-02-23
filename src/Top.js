@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/myStyle.css';
-
+import {Link} from 'react-router';
+//react router link
 class Top extends Component {
     render() {
         return ( 
@@ -9,9 +10,9 @@ class Top extends Component {
                 </div>
                 <div className="Nav" >
                     {/* Add links here */}
-                    <a className="tbLink" href='./'>Home</a>
-                    <a className="tbLink" href='./Goals'>Goals</a>
-                    <a className="tbLink" href='./Classes'>Class</a>
+                    <Link to='/' className="tbLink">Home</Link>
+                    <Link to='/Goals' className="tbLink">Goals</Link>
+                    <Link to='/Classes' className="tbLink">Class</Link>
                 </div> 
             </div>
             
